@@ -29,3 +29,5 @@ function binary_search(haystack: number[], needle: number): boolean {
 
   return false;
 }
+
+binary_search([1,3,4,6,8,14,16,17,25,45,87], 25)

@@ -52,6 +52,6 @@ const q = new Queue();
 q.enqueue('A');
 q.enqueue('B');
 q.enqueue('C');
-console.log(q.peek());
+console.assert(q.peek() === 'A');
 q.deque();
-console.log(q.peek());
+console.assert(q.peek() === 'B');

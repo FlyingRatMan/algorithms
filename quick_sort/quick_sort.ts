@@ -31,4 +31,7 @@ function partition(arr: number[], low: number, high: number): number {
 
 function quick_sort(arr: number[]): void {
   qs(arr, 0, arr.length - 1);
+  console.log(arr)
 }
+
+quick_sort([1,5,8,23,51,73,2,4,13,86,46,2,523,53])

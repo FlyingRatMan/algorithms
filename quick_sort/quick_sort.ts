@@ -1,10 +1,13 @@
 function qs(arr: number[], low: number, high: number): void {
+  // end case when we have one element it's always sorted
   if (low >= high) {
     return;
   }
 
+  // find pivot
   const pivotIdx = partition(arr, low, high);
 
+  // recursively sort left and right part except pivot
   qs(arr, low, pivotIdx - 1);
   qs(arr, pivotIdx + 1, high);
 }
@@ -31,7 +34,6 @@ function partition(arr: number[], low: number, high: number): number {
 
 function quick_sort(arr: number[]): void {
   qs(arr, 0, arr.length - 1);
-  console.log(arr)
 }
 
-quick_sort([1,5,8,23,51,73,2,4,13,86,46,2,523,53])
+console.log(quick_sort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92]));
